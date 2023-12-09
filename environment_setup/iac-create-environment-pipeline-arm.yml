@@ -2,20 +2,21 @@
 trigger:
   branches:
     include:
-      - master
+      - main
   paths:
     include:
       - environment_setup/arm-templates/*
 pr:
   branches:
     include:
-      - master
+      - main
   paths:
     include:
       - environment_setup/arm-templates/*
 
 pool:
-  vmImage: "ubuntu-latest"
+  name: "default"
+  vmImage: "DESKTOP-T3D0KQK"
 
 variables:
   - group: devopsforai-aml-vg
